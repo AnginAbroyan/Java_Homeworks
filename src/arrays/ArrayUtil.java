@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -108,7 +109,6 @@ public class ArrayUtil {
     public int nonRepeatingTriplets() {
         int[] array = {1, 5, 6, 4};
         int count = 0;
-        int[] fakeSubarray = new int[count];
         int[][] subarray = new int[count][3];
         for (int i = 0; i < array.length; i++) {
             for (int j = i; j < array.length; j++) {
@@ -121,6 +121,7 @@ public class ArrayUtil {
             }
         }
         System.out.println((count + " triplets"));
+
         return count;
     }
 
@@ -189,14 +190,35 @@ Oրինակ՝  array = {1,0,6,4,9,0,0}  // {1,6,4,9}*/
     }
 
 
-    /* 12․ Տպել տրված թվերի հաջորդականության ամենաերկար աճող ենթահաջորդականությունը:
+    /* 12․ 9: Տպել թվերի տրված հաջորդականության ամենաերկար աճող ենթահաջորդականությունը
 
 Oրինակ՝  array = {1,5,6,4,9,0,4,7,7,9, 1}  // {0,4,7,7,9} */
 
     public void maxAscSub() {
         int[] array = {1, 5, 6, 4, 9, 0, 4, 7, 7, 9, 1};
-        int[] max = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
+        int counter = 0;
+        int maxCounter = 1;
+        int start = 0;
+
+
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] <= array[i + 1]) {
+                counter++;
+                if (counter > maxCounter) {
+                    maxCounter = counter + 1;
+                    start = i - counter + 1;
+                }
+            } else {
+                counter = 0;
+            }
+        }
+        System.out.println(start);
+        int[] finalArray = new int[maxCounter];
+
+
+        for (int i = 0; i < maxCounter; i++) {
+            finalArray[i] = array[i + start];
+            System.out.println(finalArray[i]);
         }
     }
 
@@ -205,13 +227,84 @@ Oրինակ՝  array = {1,5,6,4,9,0,4,7,7,9, 1}  // {0,4,7,7,9} */
 
 Oրինակ՝    array = {1,1,0,0,1,1}  // 51*/
 
-    public void binToDec(int[] n){
+
+    public int binToDec(int n) {
+
+        int counter = 1;
+        int number = n;
+        int power = 0;
+        int temp = 0;
+        int dec = 0;
+
+
+        while (number / 10 != 0) {
+            counter++;
+            number /= 10;
+        }
+
+        int[] array = new int[counter];
+
+        for (int i = 0; i < counter; i++) {
+            array[i] = n % 10;
+            n /= 10;
+            System.out.println(array[i]);
+        }
+
+        for (int j = 0; j < array.length; j++) {
+            temp = array[j] * ((int) Math.pow(2, power));
+            dec += temp;
+            power++;
+        }
+        return dec;
+    }
+
+    /*14․ Տպել տրված մատրիցի գլխավորա անկյունագծից վերև բոլոր տարերը:*/
+
+
+    public void diagPattern() {
+        int[][] array = new int[][]{
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+                {13, 14, 15, 16}};
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (j > i) {
+                    System.out.print(array[i][j] + " ");
+                }
+            }
+            System.out.println(" ");
+        }
+    }
+
+    /*15․ Շրջել տրված ամբողջ թվերի քառակուսային մատրիցը գլխավոր անկյունագծի նկատմամբ:*/
+    public void reverseMatrix() {
+        int[][] array = new int[][]{
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+                {13, 14, 15, 16}};
+
+
+        int a = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                a = array[i][j];
+                array[i][j] = array[j][i];
+                array[j][i] = a;
+            }
+        }
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                System.out.print(array[j][i] + " ");
+            }
+            System.out.println(" ");
+        }
+
+
 
 
     }
-/*14․ Տպել տրված մատրիցի գլխավորա անկյունագծից վերև բոլոր տարերը:*/
-
-/*15․ Շրջել տրված ամբողջ թվերի քառակուսային մատրիցը գլխավոր անկյունագծի նկատմամբ:*/
 
 
 
@@ -226,4 +319,27 @@ Oրինակ՝    a = {1,-1,0,0}
     {9,7,1,-17}
 */
 
+
+    public void isEven(){
+        int[][] a ={{1,-1,0,0},
+                {2,-2,1,-1},
+                {9,0,-1,-7}};
+        int sum = 0;
+
+        for(int i = 0; i < a.length; i++){
+            for(int j = 0; j<a[i].length; j++){
+
+                sum += a[i][j];
+            }
+
+        }
+        if(sum%2 == 0){
+            System.out.println(sum);
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println(sum);
+            System.out.println("No");
+        }
+    }
 }

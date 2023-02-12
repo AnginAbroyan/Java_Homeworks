@@ -15,6 +15,15 @@ public class Main {
 //        arrays.desArr();
 //        arrays.oddsToTheEnd();
 //        arrays.noZeros();
+//        arrays.maxAscSub();
+//        System.out.println(arrays.binToDec(111010101));
+//        arrays.maxAscSub();
+//        arrays.diagPattern();
+//        arrays.reverseMatrix();
+//        arrays.isEven();
+
+
+
 
     }
 }

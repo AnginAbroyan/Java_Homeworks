@@ -1,3 +1,4 @@
+package primitive_data_types;
 import java.util.Scanner;
 
 public class HomeworkTwo {

@@ -195,7 +195,7 @@ Oրինակ՝  array = {1,0,6,4,9,0,0}  // {1,6,4,9}*/
 Oրինակ՝  array = {1,5,6,4,9,0,4,7,7,9, 1}  // {0,4,7,7,9} */
 
     public void maxAscSub() {
-        int[] array = {1, 5, 6, 4, 9, 0, 4, 7, 7, 9, 1};
+        int[] array = {1, 5, 6, 4, 5, 9, 125, 0, 5, 0, 1, 2, 3, 4, 7, 7, 9, 10, 11, 12, 13, 18, 22, 1};
         int counter = 0;
         int maxCounter = 1;
         int start = 0;
@@ -212,11 +212,9 @@ Oրինակ՝  array = {1,5,6,4,9,0,4,7,7,9, 1}  // {0,4,7,7,9} */
                 counter = 0;
             }
         }
-        System.out.println(start);
-        int[] finalArray = new int[maxCounter];
 
-
-        for (int i = 0; i < maxCounter; i++) {
+        int[] finalArray = new int[maxCounter + 1];
+        for (int i = 0; i < maxCounter + 1; i++) {
             finalArray[i] = array[i + start];
             System.out.println(finalArray[i]);
         }
@@ -302,8 +300,6 @@ Oրինակ՝    array = {1,1,0,0,1,1}  // 51*/
         }
 
 
-
-
     }
 
 
@@ -320,25 +316,29 @@ Oրինակ՝    a = {1,-1,0,0}
 */
 
 
-    public void isEven(){
-        int[][] a ={{1,-1,0,0},
-                {2,-2,1,-1},
-                {9,0,-1,-7}};
+
+    public void isEven() {
+        int[][] a = {{1, -1, 0, 0},
+                {2, -2, 1, -1},
+                {9, 0, -1, -6}};
         int sum = 0;
-
-        for(int i = 0; i < a.length; i++){
-            for(int j = 0; j<a[i].length; j++){
-
+        int counterEven = 0;
+        for (int i = 0; i < a.length; i++) {
+            sum = 0;
+            for (int j = 0; j < a[i].length; j++) {
                 sum += a[i][j];
             }
-
+            System.out.println();
+            if(sum%2 == 0){
+                counterEven++;
+            }
+            else{counterEven--;
+            }
         }
-        if(sum%2 == 0){
-            System.out.println(sum);
+        if(counterEven == a.length){
             System.out.println("Yes");
         }
-        else{
-            System.out.println(sum);
+        else {
             System.out.println("No");
         }
     }

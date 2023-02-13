@@ -20,7 +20,8 @@ public class Main {
 //        arrays.maxAscSub();
 //        arrays.diagPattern();
 //        arrays.reverseMatrix();
-//        arrays.isEven();
+
+        arrays.isEven();
 
 
 

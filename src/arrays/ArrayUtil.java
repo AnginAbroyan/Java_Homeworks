@@ -320,26 +320,18 @@ Oրինակ՝    a = {1,-1,0,0}
     public void isEven() {
         int[][] a = {{1, -1, 0, 0},
                 {2, -2, 1, -1},
-                {9, 0, -1, -6}};
+                {9, 0, -1, -7}};
         int sum = 0;
-        int counterEven = 0;
         for (int i = 0; i < a.length; i++) {
             sum = 0;
             for (int j = 0; j < a[i].length; j++) {
                 sum += a[i][j];
             }
-            System.out.println();
-            if(sum%2 == 0){
-                counterEven++;
-            }
-            else{counterEven--;
+            if(sum%2 != 0){
+                System.out.println("No");
+                return;
             }
         }
-        if(counterEven == a.length){
-            System.out.println("Yes");
-        }
-        else {
-            System.out.println("No");
-        }
+        System.out.println("Yes");
     }
 }

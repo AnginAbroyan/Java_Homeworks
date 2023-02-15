@@ -1,4 +1,4 @@
-package cars;
+package classesAndObjects.cars;
 
 public class Car {
     String model;

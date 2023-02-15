@@ -1,4 +1,4 @@
-package animalsclasses;
+package classesAndObjects.animalsclasses;
 
 public class Dog {
     String dogBreed;

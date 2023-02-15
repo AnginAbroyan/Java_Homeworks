@@ -1,11 +1,11 @@
-package javastatments;
+package javastatements;
 
 import java.util.Scanner;
 
-public class StatmentsUtil {
+public class StatementsUtil {
     Scanner myScanner = new Scanner(System.in);
 
-    void _number1() {
+    void number1() {
         System.out.println("Please enter a number: ");
         int a = myScanner.nextInt();
         if (a % 2 == 0) {
@@ -16,7 +16,7 @@ public class StatmentsUtil {
     }
 
 
-    void _number2() {
+    void number2() {
         System.out.println("Please enter a number: ");
         int a = myScanner.nextInt();
 
@@ -29,7 +29,7 @@ public class StatmentsUtil {
         }
     }
 
-    void _number3() {
+    void number3() {
         System.out.println("Please enter a number: ");
         int x = myScanner.nextInt();
         if (((5 < x) && (x < 8)) || ((15 < x) && (x < 20))) {
@@ -40,7 +40,7 @@ public class StatmentsUtil {
     }
 
 
-    void _number4() {
+    void number4() {
         System.out.println("Please enter a number: ");
         int a = myScanner.nextInt();
         if ((a % 5 == 0) && (a % 7 == 0)) {
@@ -54,7 +54,7 @@ public class StatmentsUtil {
         }
     }
 
-    public boolean _number5() {
+    public boolean number5() {
         System.out.println("Please enter a number: ");
         int a = myScanner.nextInt();
         int x = a / 10 % 10;
@@ -65,7 +65,7 @@ public class StatmentsUtil {
         }
     }
 
-    void _number6() {
+    void number6() {
         System.out.println("Please enter the coordinate: ");
         int x = myScanner.nextInt();
         int y = myScanner.nextInt();
@@ -81,7 +81,7 @@ public class StatmentsUtil {
         }
     }
 
-    void _number7() {
+    void number7() {
         System.out.println("Please enter the numbers: ");
         int x = myScanner.nextInt();
         int y = myScanner.nextInt();
@@ -98,7 +98,7 @@ public class StatmentsUtil {
     }
 
 
-    void _number8() {
+    void number8() {
         System.out.println("Please enter the year: ");
         int year = myScanner.nextInt();
         if (year % 100 == 0 && year % 400 == 0) {
@@ -141,7 +141,7 @@ Ex. 10.2
 
 */
 
-    void _number11() {
+    void number11() {
         int x = 1;
         while (x < 201) {
             System.out.println(x);
@@ -150,7 +150,7 @@ Ex. 10.2
     }
 
 
-    void _number12() {
+    void number12() {
         System.out.println("Please enter a number: ");
         int a = myScanner.nextInt();
         int first_digit;
@@ -161,7 +161,7 @@ Ex. 10.2
     }
 
 
-    void _number13() {
+    void number13() {
         int x = 1;
         int y = 0;
         while (x < 5 && y < 10) {
@@ -177,7 +177,7 @@ Ex. 10.2
      * int i is being used for columns
      * int j is being used for rows.
      */
-    void _number14(){
+    void number14(){
         System.out.println("Please enter the side size: ");
         int sideSize = myScanner.nextInt();
         int i = 0;
@@ -199,7 +199,7 @@ Ex. 10.2
         }
     }
 
-    void _number15() {
+    void number15() {
         System.out.println("Please enter the N number: ");
         int n = myScanner.nextInt();
         int sum = 0;
@@ -214,7 +214,7 @@ Ex. 10.2
     }
 
 
-    void _number16(){
+    void number16(){
         System.out.println("Please enter the N number: ");
         int n = myScanner.nextInt();
         long multiplication = 1;
@@ -230,7 +230,7 @@ Ex. 10.2
 
     }
 
-    void _number17(){
+    void number17(){
         System.out.println("Please enter the N number: ");
         int n = myScanner.nextInt();
         long arMean = (n + 1)/2;
@@ -238,13 +238,14 @@ Ex. 10.2
     }
 
 
-    void _number18(){
+    void number18(){
         System.out.println("Please enter a 5 digit number: ");
         int n = myScanner.nextInt();
         int sumDigit = n % 10 + n / 10 % 10 + n / 100 % 10 + n / 1000 % 10 +n / 10000 % 10;
         System.out.println("The sum of " + n + "'s digits is equal to " + sumDigit);
     }
 }
+
 
 
 

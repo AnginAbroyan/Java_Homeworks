@@ -1,4 +1,4 @@
-package employee;
+package classesAndObjects.employee;
 
 public class Employee {
     String id;

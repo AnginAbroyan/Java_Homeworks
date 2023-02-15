@@ -1,4 +1,4 @@
-package bookauthor;
+package classesAndObjects.bookauthor;
 
 public class Author {
     String name;

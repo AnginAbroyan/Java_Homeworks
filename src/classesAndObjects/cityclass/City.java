@@ -1,4 +1,4 @@
-package cityclass;
+package classesAndObjects.cityclass;
 
 public class City {
     String name;

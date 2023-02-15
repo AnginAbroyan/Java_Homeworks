@@ -11,7 +11,7 @@ public class Main {
 //        arrays.transferArr();
 //        arrays.sumArrays();
 //        arrays.countK(5);
-//        arrays.nonRepeatingTriplets();
+        arrays.nonRepeatingTriplets();
 //        arrays.desArr();
 //        arrays.oddsToTheEnd();
 //        arrays.noZeros();
@@ -21,7 +21,7 @@ public class Main {
 //        arrays.diagPattern();
 //        arrays.reverseMatrix();
 
-        arrays.isEven();
+//        arrays.isEven();
 
 
 

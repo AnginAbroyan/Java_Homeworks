@@ -1,4 +1,4 @@
-package classesAndObjects.rectangle;
+package classes_and_objects.rectangle;
 
 public class Rectangle {
     int height;

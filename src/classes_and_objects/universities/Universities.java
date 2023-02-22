@@ -1,4 +1,4 @@
-package classesAndObjects.universities;
+package classes_and_objects.universities;
 
 public class Universities {
     int studentAmount;

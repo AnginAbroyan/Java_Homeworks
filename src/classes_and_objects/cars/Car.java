@@ -1,4 +1,4 @@
-package classesAndObjects.cars;
+package classes_and_objects.cars;
 
 public class Car {
     String model;

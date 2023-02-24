@@ -29,8 +29,8 @@ public class Main {
 //      System.out.println(problems.revParentheses("foo(bar)baz"));
 //        System.out.println(problems.findA3Chars( ));
 //        System.out.println(problems.comSepStr( ));
-//        System.out.println(problems.countCommonChars("hello world!", "hello world!!! I am John Doe."));
-        System.out.println(problems.maxCommonSubSeq("hello world!, Jupiter", "hello world!!! I am John Doe. Jupiter"));
+        System.out.println(problems.countCommonChars("abcdef", "fedcbaklis"));
+//        System.out.println(problems.maxCommonSubSeq("hello world!, Jupiter", "hello world!!! I am John Doe. Jupiter"));
 
 
     }

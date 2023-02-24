@@ -7,7 +7,8 @@ import java.util.Scanner;
 public class StringUtil_2 {
     Scanner sc = new Scanner(System.in);
 
-    /** 1. done
+    /**
+     * 1. done
      * Returns a string made from the given String's first 2 chars (if present), however includes first char only if
      * it is 'o' and include the second only if it is 'z', so "ozymandias" yields "oz".
      *
@@ -32,9 +33,9 @@ public class StringUtil_2 {
         return subStr;
     }
 
-    /** 2.done
+    /**
+     * 2.done
      * Counts the number of "xx" in the given string. Overlapping is allowed, so "xxx" contains 2 "xx".
-     *
      * @param line, This is the given String, in which we look for xx couples.
      * @return the count of wanted subString.
      */
@@ -49,7 +50,8 @@ public class StringUtil_2 {
     }
 
 
-    /** 3.done
+    /**
+     * 3.done
      * The method detects whether the String is a palindrome or not.
      *
      * @param line, The String which is examined.
@@ -65,7 +67,8 @@ public class StringUtil_2 {
     }
 
 
-    /** 4. done
+    /**
+     * 4. done
      * The method returns a list of all strings that start with the letter 'a' (lower case) and have exactly 3 letters.
      *
      * @returns list elements that starts with a and have 3 letters.
@@ -76,8 +79,6 @@ public class StringUtil_2 {
         list.add("adg");
         list.add("aog");
         list.add("fdgdg");
-
-
         for (int i = 0; i < list.size(); i++) {
             if (!list.get(i).startsWith("a") && !(list.get(i).length() == 3)) {
                 list.remove(list.get(i));
@@ -140,8 +141,10 @@ public class StringUtil_2 {
 
     //6. done
 
-    /** 6 done
+    /**
+     * 6 done
      * The method is simple Caesar decoder.
+     *
      * @param line, The text which will be decoded.
      * @returns decoded text.
      */
@@ -187,8 +190,10 @@ public class StringUtil_2 {
 //        return longPal;
 //    }
 
-    /** 8 done
+    /**
+     * 8 done
      * a method that finds the longest common sub-sequence between two Strings.
+     *
      * @param line1 1st String
      * @param line2 2nd String
      * @return the longest sub_sequence.
@@ -197,9 +202,9 @@ public class StringUtil_2 {
         int count = 0;
         String maxSub_sequence = "";
         for (int i = 0; i < line1.length(); i++) {
-            for(int j = i+1; j< line1.length(); j++){
+            for (int j = i + 1; j < line1.length(); j++) {
                 String sub_sequence = line1.substring(i, j);
-                if(line2.contains(sub_sequence) && sub_sequence.length()> count){
+                if (line2.contains(sub_sequence) && sub_sequence.length() > count) {
                     count = sub_sequence.length();
                     maxSub_sequence = sub_sequence;
                 }
@@ -209,8 +214,8 @@ public class StringUtil_2 {
     }
 
 
-
-    /** 9 done
+    /**
+     * 9 done, doesn't work
      * Finds the number of common characters between two String.
      * @param line1 1st String
      * @param line2 2nd String
@@ -218,7 +223,7 @@ public class StringUtil_2 {
      */
     public int countCommonChars(String line1, String line2) {
         int count = 0;
-        for(int i=0; i< Math.min(line1.length(), line2.length()); i++) {
+        for (int i = 0; i < Math.min(line1.length(), line2.length()); i++) {
             if (line1.charAt(i) == line2.charAt(i)) {
                 count++;
             }

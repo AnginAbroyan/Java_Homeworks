@@ -1,4 +1,7 @@
-package homework10.abstract_class_and_interface;
+package homework10.abstract_class_and_interface.ex4;
+
+import homework10.abstract_class_and_interface.ex4.ArithmeticClass;
+
 //  4.
 public class ToTestInt {
     ArithmeticClass obj = new ArithmeticClass();

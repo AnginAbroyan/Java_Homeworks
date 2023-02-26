@@ -1,5 +1,7 @@
 package homework10.inheritance;
 
+import homework10.inheritance.ex4.Truck;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -23,7 +25,7 @@ public class Main {
 
 
         //EX4
-        Truck4 obj2 = new Truck4(3, "ESS");
+        Truck obj2 = new Truck(3, "ESS");
         System.out.println("Passenger count: " + obj2.getPassengerCount() + "\nEngine Type: " + obj2.getEngineType() +
                 "\nCapacity: " + obj2.getCapacity());
 

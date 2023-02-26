@@ -1,4 +1,4 @@
-package homework10.abstract_class_and_interface;
+package homework10.abstract_class_and_interface.ex2;
 
 
 //2.	Write a program to create a class named Shape which has two abstract

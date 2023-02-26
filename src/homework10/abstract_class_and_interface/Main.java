@@ -1,5 +1,8 @@
 package homework10.abstract_class_and_interface;
 
+import homework10.abstract_class_and_interface.ex5.Elephant;
+import homework10.abstract_class_and_interface.ex5.Tiger;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -34,13 +37,14 @@ public class Main {
 //        System.out.println(obj.getObj().square(5));
 
 
-        //Ex 5.
+//        //Ex 5.
         Elephant el = new Elephant();
         Tiger tig = new Tiger();
         el.makeNoise();
         el.eatingHabits();
         tig.eatingHabits();
         tig.makeNoise();
+
 
 
     }

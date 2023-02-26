@@ -7,7 +7,7 @@ public class Homework {
 
     Scanner myScanner = new Scanner(System.in);
 
-    void number1(){
+    void number1() {
         System.out.println("Please enter your numbers: ");
         byte a = myScanner.nextByte();
         byte b = myScanner.nextByte();
@@ -16,26 +16,26 @@ public class Homework {
         System.out.print("a: " + a + ", b: " + b);
     }
 
-    void number2(){
+    void number2() {
         System.out.println("Please enter your numbers: ");
         short c = myScanner.nextShort();
         short d = myScanner.nextShort();
         System.out.print("c: " + c + "\nd: " + d);
     }
 
-    void number3(){
+    void number3() {
         int e = myScanner.nextInt();
         int f = myScanner.nextInt();
         System.out.print("e: " + e + "\nf: " + f);
     }
 
-    void number4(){
+    void number4() {
         long g = myScanner.nextLong();
         long h = myScanner.nextLong();
         System.out.print("g: " + g + "\nh: " + h);
     }
 
-    void number5(){
+    void number5() {
         byte min_byte = Byte.MIN_VALUE;
         byte max_byte = Byte.MAX_VALUE;
         short min_short = -32768;
@@ -50,21 +50,21 @@ public class Homework {
         System.out.print("Minimum long value is " + min_long + " and maximum long value is " + max_long + ".");
     }
 
-    void number6(){
+    void number6() {
         float j = myScanner.nextFloat();
         float k = myScanner.nextFloat();
         System.out.print("j: " + j + "\nk: " + k);
 
     }
 
-    void number7(){
+    void number7() {
         double l = myScanner.nextDouble();
         double m = myScanner.nextDouble();
         System.out.print("L: " + l + "\nM: " + m);
 
     }
 
-    void number8(){
+    void number8() {
         float min_float = Float.MIN_VALUE;
         float max_float = Float.MAX_VALUE;
         double min_double = 2.2250738585072014E-308d;
@@ -73,52 +73,52 @@ public class Homework {
         System.out.print("Minimum double value is " + min_double + " and maximum double value is " + max_double + ".");
     }
 
-    void number10(){
+    void number10() {
         char n = (char) myScanner.nextInt();
         char o = (char) myScanner.nextInt();
         System.out.print("n: " + n + "\no: " + o);
     }
 
-    void number11_1(){
-    char s = 77;
-    char w = 109;
-    System.out.print("s: " + s + "\nw: " + w);
+    void number11_1() {
+        char s = 77;
+        char w = 109;
+        System.out.print("s: " + s + "\nw: " + w);
     }
 
-    void number11_2(){
+    void number11_2() {
         char t = 57;
         System.out.print("t: " + t);
     }
 
-    void number12(){
+    void number12() {
         boolean p = true;
         boolean q = false;
         System.out.print("The value of p is: " + p);
         System.out.print("\nThe value of q is: " + q);
     }
 
-    void number14(){
+    void number14() {
         int aa = 7;
         long bb = aa;
         System.out.print(bb);
     }
 
-    void number15(){
+    void number15() {
         int myInt = 7;
         double myDouble = myInt;
         System.out.print(myDouble);
     }
 
-    void number16(){
+    void number16() {
         double dd = 9.78d;
-        int ii = (int)9.78d;
+        int ii = (int) 9.78d;
         System.out.print(ii);
 
     }
 
-    void number17(){
+    void number17() {
         int ff = 9999;
-        byte gg = (byte)9999;
+        byte gg = (byte) 9999;
         System.out.print(gg);
     }
 

@@ -1,6 +1,6 @@
-package homework10.inheritance;
+package homework10.inheritance.ex1;
 
-public class Parent1 {
+public class Parent {
 
 
     protected void showMessage() {

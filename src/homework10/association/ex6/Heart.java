@@ -1,6 +1,6 @@
-package homework10.association;
+package homework10.association.ex6;
 
-public class Heart6 {
+public class Heart {
     private String diseases;
     private int heartRate;
 

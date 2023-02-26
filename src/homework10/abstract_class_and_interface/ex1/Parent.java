@@ -1,4 +1,4 @@
-package homework10.abstract_class_and_interface;
+package homework10.abstract_class_and_interface.ex1;
 
 
 //1.	Create an abstract class 'Parent' with an abstract method message(). It has two subclasses ChildOne &

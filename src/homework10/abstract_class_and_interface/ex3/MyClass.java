@@ -1,6 +1,9 @@
-package homework10.abstract_class_and_interface;
+package homework10.abstract_class_and_interface.ex3;
+
+import homework10.abstract_class_and_interface.ex3.A;
+
 //3.
-public class MyClass implements A{
+public class MyClass implements A {
     @Override
     public void methOne() {
         System.out.println("MyClass.methOne");

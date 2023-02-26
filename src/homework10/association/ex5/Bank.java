@@ -1,15 +1,15 @@
-package homework10.association;
+package homework10.association.ex5;
 
 
 //Aggregation
-public class Bank5 {
+public class Bank {
     public int countEmployee;
     public String department;
     public String name;
 
-    private Employee5 employee;
+    private Employee employee;
 
-    public Bank5(Employee5 employee){
+    public Bank(Employee employee){
         this.employee = employee;
     }
 }

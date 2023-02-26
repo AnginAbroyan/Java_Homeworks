@@ -8,7 +8,9 @@ public class ArrayUtil {
     Scanner myscanner = new Scanner(System.in);
 
 
-    // 1. Գրել method, որը տպում է int[] n  array-ի դրական տարրերը․
+    /**
+     * The method prints out all the positive elements in int[] array.
+     */
     public void arrIntPos() {
         int[] n = {1, 0, 2, -5, -856, -95637, 256, 896};
         for (int i = 0; i < n.length; i++) {
@@ -18,7 +20,10 @@ public class ArrayUtil {
         }
     }
 
-    // 2. Գրել method, որը տպում է short[] s  array-ի էլեմենտները հակառակ հերթականությամբ  Օրինակ՝ ( 257 -> 752)․
+
+    /**
+     * The method prints out the elements of short[] s array in reverse order. EX. 257 >> 752
+     */
     public void reverseArr() {
         short[] s = {1, 0, 2, -5, 0, -856, -32768, 256, 896};
         for (int i = s.length - 1; i >= 0; i--) {
@@ -26,7 +31,10 @@ public class ArrayUtil {
         }
     }
 
-    //  3. Գրել method, որը գտնում և  տպում է  long[] l array-ի ամենամեծ տարրը․
+
+    /**
+     * maxArr method finds and prints the greatest element of long[] l array.
+     */
     public void maxArr() {
         long[] l = {1, 2, 5, 896, 54652, 999999, -256, -1};
         long max = l[0];
@@ -39,8 +47,9 @@ public class ArrayUtil {
     }
 
 
-    // 4. Գրել method, որը գտնում և տպում է  float[] f  array-ի ամենափոքր տարրը․
-
+    /**
+     * MinArr method prints the smallest element of float[] f  array.
+     */
     public void minArr() {
         float[] f = {1.222f, 0.555555f, -256.888f, 2.6956f};
         float min = f[0];
@@ -52,8 +61,9 @@ public class ArrayUtil {
         System.out.println("Min: " + min);
     }
 
-    //5 ․ Գրել method, որը int[] n array-ի էլեմենտները և տեղափոխում  int[] m  array-ի մեջ։
-
+    /**
+     * transferArr method transfers all the elements of int[] n array into int[] m array.
+     */
     public void transferArr() {
         int[] n = {1, 2, 3, 4, 5, 6};
         int[] m = new int[n.length];
@@ -65,11 +75,10 @@ public class ArrayUtil {
         }
     }
 
-
-    /* 6․ Գրել method, որը ստեղծում է երկու նույն չափը ունեցող array-ներ գումարում է array -ի
-     համապատասխան էլեմենտները և գրում երրորդ array-ի մեջ։
-            Օրինակ՝ array1 = {1,5,6,4,7}; array2 = {7,4,2,3,5};    array3 = {8,9,8,7,12}  */
-
+    /**
+     * sumArrays method returns an array which is created by adding up two arrays elements accordingly.
+     * ex. array1 = {1,5,6,4,7}; array2 = {7,4,2,3,5};    array3 = {8,9,8,7,12}
+     */
     public void sumArrays() {
         int[] a = {1, 5, 6, 4, 7};
         int[] b = {7, 4, 2, 3, 5};
@@ -82,13 +91,10 @@ public class ArrayUtil {
         }
     }
 
-    /* 7. Գրել method, որը հաշվում է թե քանի անգամ է  k թիվը հանդիպել array-ի  Էլեմենտների մեջ։
-
-            Օրինակ՝  array = {1,5,6,4,5}
-                   k = 5;
-                    2  */
-
-
+    /**
+     * countK method counts the occurrence of k number in an array.
+     * @param k, the number which occurrence is counted.
+     */
     public void countK(int k) {
         int[] array = {1, 5, 6, 4, 5};
         int counter = 0;
@@ -100,12 +106,10 @@ public class ArrayUtil {
         System.out.println("The number " + k + " was encountered " + k + " times in the array.");
     }
 
-
-    /*8․Գրել method, որը  տպում է բոլոր չկրկնվող եռյակները array -ի։ Եռյակներում թվերի դասավորությունը Էական չէ․
-
-Օրինակ՝  array = {1,5,6,4}
- // {1,5,6},  {1,5,4} ,{1,4,6}, {4,5,6} */
-
+    /**
+     * nonRepeatingTriplets method prints all not repeating triplets.
+     * @returns the triplets that are not repeating.
+     */
     public int nonRepeatingTriplets() {
         int[] array = {1, 5, 6, 4};
         int count = 0;
@@ -125,8 +129,9 @@ public class ArrayUtil {
         return count;
     }
 
-    /* 9․ Դասավորել տրված թվերի հաջորդականության անդամները նվազման կարգո */
-
+    /**
+     * desArr method sorts the array in descending order.
+     */
     public void desArr() {
         int[] array = {9, 8, 7, 6, 25, 5, 4, 3, 2, 1, 15};
         int temp;
@@ -144,10 +149,9 @@ public class ArrayUtil {
         }
     }
 
-    /* 10․ Դասավորել տրված ամբողջ թվերի հաջորդականության անդամներն անյպես, որ վերջում լինեն կենտերը:
-
-Oրինակ՝  array = {1,5,6,4,9,7,1}  // {6,4,1,5,9,7,1} */
-
+    /**
+     * oddsToTheEnd method sorts odd elements of an array to the end.
+     */
     public void oddsToTheEnd() {
         int[] array = {1, 5, 6, 4, 9, 18, 7, 1, 2, 4,};
         int temp;
@@ -165,10 +169,9 @@ Oրինակ՝  array = {1,5,6,4,9,7,1}  // {6,4,1,5,9,7,1} */
         }
     }
 
-    /*11․ Տրված իրական թվերի հաջորդականությունից հեռացնել բոլոր զրոները։
-
-Oրինակ՝  array = {1,0,6,4,9,0,0}  // {1,6,4,9}*/
-
+    /**
+     * noZeros method removes all zeros from an array.
+     */
     public void noZeros() {
         int[] array = {1, 0, 6, 4, 9, 0, 0};
         int len = 0;
@@ -189,11 +192,9 @@ Oրինակ՝  array = {1,0,6,4,9,0,0}  // {1,6,4,9}*/
         }
     }
 
-
-    /* 12․ 9: Տպել թվերի տրված հաջորդականության ամենաերկար աճող ենթահաջորդականությունը
-
-Oրինակ՝  array = {1,5,6,4,9,0,4,7,7,9,1}  // {0,4,7,7,9} */
-
+    /**
+     * maxAscSub method finds and prints the longest increasing subarray from an array.
+     */
     public void maxAscSub() {
         int[] array = {1, 5, 6, 4, 5, 9, 125, 0, 5, 0, 1, 2, 3, 4, 7, 7, 9, 10, 11, 12, 13, 18, 22, 1};
         int counter = 0;
@@ -220,12 +221,11 @@ Oրինակ՝  array = {1,5,6,4,9,0,4,7,7,9,1}  // {0,4,7,7,9} */
         }
     }
 
-
-/*13․ Ներածել n բնական թիվը 2-ական տեսքով՝ ստանալով 0-ներից ու 1-երից կազմված զանգված և արտածել n  թվի 10-ական ներկայացումը:
-
-Oրինակ՝    array = {1,1,0,0,1,1}  // 51*/
-
-
+    /**
+     * binToDec method het a binary number, then coverts it into decimal.
+     * @param n, binary number, which will be converted.
+     * @returns corresponding decimal equivalent of n binary number.
+     */
     public int binToDec(int n) {
 
         int counter = 1;
@@ -256,9 +256,9 @@ Oրինակ՝    array = {1,1,0,0,1,1}  // 51*/
         return dec;
     }
 
-    /*14․ Տպել տրված մատրիցի գլխավորա անկյունագծից վերև բոլոր տարերը:*/
-
-
+    /**
+     * diagPattern method prints all the elements of a matrix that are above the main diagonal.
+     */
     public void diagPattern() {
         int[][] array = new int[][]{
                 {1, 2, 3, 4},
@@ -275,7 +275,9 @@ Oրինակ՝    array = {1,1,0,0,1,1}  // 51*/
         }
     }
 
-    /*15․ Շրջել տրված ամբողջ թվերի քառակուսային մատրիցը գլխավոր անկյունագծի նկատմամբ:*/
+    /**
+     * reverseMatrix method inverts the elements of the matrix's  towards its main diagonal.
+     */
     public void reverseMatrix() {
         int[][] array = new int[][]{
                 {1, 2,  3, 4},
@@ -300,19 +302,9 @@ Oրինակ՝    array = {1,1,0,0,1,1}  // 51*/
         }
     }
 
-/*16․ Տրված բնական թվերի քառակուսային մատրիցի համար արտածել YES, եթե նրա բոլոր տողերի տարրերի գումարը զույգ է։  NO հակառակ դեպքում։
-
-Oրինակ՝  a = {1,-1,0,0}
-    {2,-2,1,-1}        // YES
-    {9,7,1,-17}
-
-                      a = {1,1,0,0}
-    {2,-2,1,-1}        //NO
-    {9,7,1,-17}
-*/
-
-
-
+    /**
+     * isEven method returns Yes, if the sum of each row's elements of square matrix is even, otherwise prints NO.
+     */
     public void isEven() {
         int[][] a = {{1, -1, 0, 0},
                 {2, -2, 1, -1},

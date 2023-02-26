@@ -1,5 +1,8 @@
 package homework10.association;
 
+import homework10.association.ex7.Address;
+import homework10.association.ex7.User;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,22 +20,22 @@ public class Main {
 //        Human6 aHuman = new Human6();
 
         //EX 7.
-        Address7 add1 = new Address7("aaaa");
-        Address7 add2 = new Address7("bbbb");
-        Address7 add3 = new Address7("cccc");
+        Address add1 = new Address("aaaa");
+        Address add2 = new Address("bbbb");
+        Address add3 = new Address("cccc");
 
-        List<Address7> addresses = new ArrayList<Address7>();
+        List<Address> addresses = new ArrayList<Address>();
 
         addresses.add(add1);
         addresses.add(add2);
         addresses.add(add3);
 
-        User7 user = new User7(addresses);
+        User user = new User(addresses);
 
-        List<Address7> adr = user.getTotalAddresses();
+        List<Address> adr = user.getTotalAddresses();
 
         // Iterating over books using for each loop
-        for (Address7 ad : adr) {
+        for (Address ad : adr) {
             System.out.println("Addresses : " + ad.address_name);
         }
     }

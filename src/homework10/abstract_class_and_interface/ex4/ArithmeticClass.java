@@ -1,4 +1,5 @@
-package homework10.abstract_class_and_interface;
+package homework10.abstract_class_and_interface.ex4;
+
 //4.
 public class ArithmeticClass implements Test {
     int squareNum = 1;

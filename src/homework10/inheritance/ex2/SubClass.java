@@ -1,10 +1,10 @@
-package homework10.inheritance;
+package homework10.inheritance.ex2;
 
-public class SubClass2 extends SuperClass2 {
+public class SubClass extends SuperClass {
     public String message = "Hello SubClass class";
 
 
-   public SubClass2(){
+   public SubClass(){
        System.out.println(super.message);
        System.out.println(message);
    }

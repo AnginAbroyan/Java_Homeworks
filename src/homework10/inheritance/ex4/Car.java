@@ -1,11 +1,11 @@
-package homework10.inheritance;
+package homework10.inheritance.ex4;
 
-public class Car4 {
+public class Car {
     private int passengerCount;
     private String engineType;
 
 
-    public Car4(int passengerCount, String engineType) {
+    public Car(int passengerCount, String engineType) {
         this.passengerCount = passengerCount;
         this.engineType = engineType;
     }

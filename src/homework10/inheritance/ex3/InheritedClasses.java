@@ -1,12 +1,12 @@
-package homework10.inheritance;
+package homework10.inheritance.ex3;
 
-public class InheritedClasses3 {
+public class InheritedClasses {
     public void DisplayA() {
         System.out.print("A ");
     }
 }
 
-class B extends InheritedClasses3 {
+class B extends InheritedClasses {
     public void DisplayB(){
         System.out.print("B ");
     }

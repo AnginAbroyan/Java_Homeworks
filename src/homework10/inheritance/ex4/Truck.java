@@ -1,6 +1,6 @@
-package homework10.inheritance;
+package homework10.inheritance.ex4;
 
-public class Truck4 extends Car4 {
+public class Truck extends Car {
     private int capacity = 0;
 
     public int getCapacity() {
@@ -11,7 +11,7 @@ public class Truck4 extends Car4 {
         this.capacity = capacity;
     }
 
-    public Truck4(int passengerCount, String engineType) {
+    public Truck(int passengerCount, String engineType) {
         super(passengerCount, engineType);
     }
 

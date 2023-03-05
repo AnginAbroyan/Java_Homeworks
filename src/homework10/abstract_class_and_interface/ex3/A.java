@@ -4,5 +4,4 @@ package homework10.abstract_class_and_interface.ex3;
 public interface A {
     void methOne();
     void methTwo();
-
 }

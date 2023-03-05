@@ -1,5 +1,5 @@
 package homework11;
-
+//ex7
 public class Cards {
     private final Rank rank;
     private final Suit suit;

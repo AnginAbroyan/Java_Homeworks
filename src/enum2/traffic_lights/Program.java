@@ -10,11 +10,12 @@ public class Program extends Methods {
     boolean dir = true;
 
         private static class ChangeState extends TimerTask {
+            private final Program lights;
             public ChangeState(Program lights) {
 
                 this.lights = lights;
             }
-            private final Program lights;
+
 
             /**
              * Override method from TimerTask that switches traffic lights.
@@ -42,7 +43,7 @@ public class Program extends Methods {
                         break;
                 }
                 System.out.println(lights.state);
-                timer.schedule(new ChangeState(lights),1000);// state.time);
+                timer.schedule(new ChangeState(lights),1000);    // state.time);
             }
         }
 

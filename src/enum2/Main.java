@@ -27,9 +27,9 @@ public class Main {
 //       SolarPlanets.stream().forEach((System.out::println));
 
 
-//        for (SolarPlanets planets1 : SolarPlanets.values()){
-//            planets1.printNameMass();
-//        }
+        for (SolarPlanets planets1 : SolarPlanets.values()){
+            planets1.printNameMass();
+        }
 
 
         //EX4
@@ -44,9 +44,9 @@ public class Main {
 
 
         //EX6
-        Topping obj2 = Topping.PEPPER;
-        PizzaSize obj =PizzaSize.SMALL;
-        System.out.println(obj.sizePriceCalculator() + obj2.toppingPriceCalculator());
+//        Topping obj2 = Topping.PEPPER;
+//        PizzaSize obj =PizzaSize.SMALL;
+//        System.out.println(obj.sizePriceCalculator() + obj2.toppingPriceCalculator());
 
     }
 }

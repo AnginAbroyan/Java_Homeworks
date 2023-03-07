@@ -60,6 +60,10 @@ public enum Planets {
 
     }
 
+
+    /**
+     * @returns the name of the planet.
+     */
     public String getName() {
         return name;
     }

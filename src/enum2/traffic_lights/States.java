@@ -1,13 +1,14 @@
 package enum2.traffic_lights;
 
 public enum States {
-    GREEN(10),
+    GREEN(7),
     YELLOW(2),
-    RED(5);
+    RED(15);
 
     public int sec;
 
     States(int sec) {
+
         this.sec = sec;
     }
 }

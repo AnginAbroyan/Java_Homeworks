@@ -14,8 +14,8 @@ public class Main {
 
 
         //EX. 2
-//        WeekDays days = WeekDays.SATURDAY;
-//        System.out.println(days.numberWeekDay(WeekDays.TUESDAY));
+        WeekDays days = WeekDays.SATURDAY;
+        System.out.println(days.numberWeekDay(WeekDays.TUESDAY));
 
 
         //EX. 3

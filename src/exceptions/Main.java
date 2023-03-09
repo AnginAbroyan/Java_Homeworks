@@ -29,12 +29,14 @@ public class Main {
         //EX6
 
         //EX7
-        obj.getAge();
+//        obj.getAge();
 
         //EX8
+//obj.validEmail();
+
 
         //EX9
-
+obj.wordCounter();
         //EX10
 
         //EX11

@@ -7,19 +7,20 @@ import java.util.Scanner;
 
 public class Programs extends Exception {
     Scanner sc = new Scanner(System.in);
-    public Programs () {
+
+    public Programs() {
     }
 
-    public Programs (String message) {
-        super (message);
+    public Programs(String message) {
+        super(message);
     }
 
-    public Programs (Throwable cause) {
-        super (cause);
+    public Programs(Throwable cause) {
+        super(cause);
     }
 
-    public Programs (String message, Throwable cause) {
-        super (message, cause);
+    public Programs(String message, Throwable cause) {
+        super(message, cause);
     }
 
 
@@ -71,7 +72,7 @@ public class Programs extends Exception {
 
 
     /**
-     * EX3
+     * EX3 (SAME AS EX9)
      * Method divides num1 by num2, and output the result, it handles the case not letting to input 0.
      */
 
@@ -109,8 +110,7 @@ public class Programs extends Exception {
                 i = input.read();
             }
             input.close();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Couldn't track the file to read. ");
         }
     }
@@ -118,29 +118,28 @@ public class Programs extends Exception {
 
     /**
      * EX5
-     *The method calculates the square root of the given number, if the inputted value does not have square root,
+     * The method calculates the square root of the given number, if the inputted value does not have square root,
      * the exceptions are caught.
      */
 
     public void squareRoot() {
         System.out.println("Enter a number to calculate its square root: ");
 
-        try{
+        try {
             int n = sc.nextInt();
             double result = Math.sqrt(n);
 
-            if(n<0){throw new Programs("NaN exception.");}
+            if (n < 0) {
+                throw new Programs("NaN exception.");
+            }
             System.out.println(result);
-        }
-        catch(InputMismatchException e){
+            sc.close();
+        } catch (InputMismatchException e) {
             System.out.println("Invalid input");
 
-        }
-        catch(Programs a){
+        } catch (Programs a) {
             System.out.println("NaN exception");
-        }
-
-        finally{
+        } finally {
             System.out.println("Good bye");
 
         }
@@ -179,16 +178,16 @@ public class Programs extends Exception {
      * The method gets the age if it's not smaller than 0 and not greater than 120. In that case exceptions are caught.
      */
 
-    public void getAge() throws Exception{
+    public void getAge() throws Exception {
         try {
             System.out.println("Please enter your age: ");
             int age = sc.nextInt();
             if (age >= 120 || age <= 1) {
                 throw new Programs("InvalidAgeException");
             }
+            sc.close();
             System.out.println("My age is: " + age);
-        }
-        catch(Programs a){
+        } catch (Programs a) {
             System.out.println("Exception message: " + a.getMessage());
         }
     }
@@ -196,10 +195,45 @@ public class Programs extends Exception {
 
     /**
      * EX8
+     * The method checks whether the given mail address is legal or not. If not it throws an exception.
      */
 
-    public void validEmail() throws Exception{
+    public void validEmail() throws Exception {
+        System.out.println("Please enter your email address: ");
+        String email = sc.nextLine();
+        try {
+            if (!(email.contains("@mail.com") && email.length() >= 10)) {
+                throw new Programs("InvalidMailAddressException");
+            }
+            System.out.println("The given mail address is legal.");
+        } catch (Programs a) {
+            System.out.println("Exception message: " + a.getMessage());
+        }
+    }
 
+    /**
+     * EX10
+     * The method counts the words in the document, if document is not trackable, if throws an exception.
+     */
+    public void wordCounter() throws Exception{
+        try {
+            BufferedReader input = new BufferedReader(new FileReader("C:\\Users\\Serge\\gitaddece\\Java_Homeworks\\src\\exceptions\\input.txt"));
+            int i = input.read();
+            int count = 1;
+
+            while (i != -1) {
+                if((char) i == ' ' || (char) i == '\n'){
+                    count++;
+                };
+
+                i = input.read();
+            }
+            System.out.println("There are " + count + " words in the document.");
+
+            input.close();
+        } catch (Exception e) {
+            System.out.println("Couldn't track the file to read. ");
+        }
     }
 }
 

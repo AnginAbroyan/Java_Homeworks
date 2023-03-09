@@ -27,9 +27,9 @@ public class Main {
 //       SolarPlanets.stream().forEach((System.out::println));
 
 
-        for (SolarPlanets planets1 : SolarPlanets.values()){
-            planets1.printNameMass();
-        }
+//        for (SolarPlanets planets1 : SolarPlanets.values()){
+//            planets1.printNameMass();
+//        }
 
 
         //EX4
@@ -38,8 +38,8 @@ public class Main {
 
 
         //EX5
-//        Season obj1 = Season.SPRING;
-//        obj1.checkSeason();
+        Season obj1 = Season.SPRING;
+        obj1.checkSeason();
 
 
 

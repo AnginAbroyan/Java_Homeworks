@@ -7,8 +7,9 @@ public enum PizzaSize {
     MEDIUM(13),
     LARGE(18);
 
-   public int priceSize;
-    PizzaSize(int price){
+    public int priceSize;
+
+    PizzaSize(int price) {
         this.priceSize = price;
     }
 
@@ -17,6 +18,7 @@ public enum PizzaSize {
 
     /**
      * This method calculates the pizza price depending on the size.
+     *
      * @returns only pizza price without toppings.
      */
     public int sizePriceCalculator() {
@@ -24,17 +26,14 @@ public enum PizzaSize {
         String input = sc.nextLine().toUpperCase();
         int priceSize = 0;
 
-
-        for (PizzaSize size : PizzaSize.values()) {
-            if (input.equals(SMALL.toString())) {
-                priceSize = SMALL.priceSize;
-            }
-            if (input.equals(MEDIUM.toString())) {
-                priceSize = MEDIUM.priceSize;
-            }
-            if (input.equals(LARGE.toString())) {
-                priceSize = LARGE.priceSize;
-            }
+        if (input.equals(SMALL.toString())) {
+            priceSize = SMALL.priceSize;
+        }
+        if (input.equals(MEDIUM.toString())) {
+            priceSize = MEDIUM.priceSize;
+        }
+        if (input.equals(LARGE.toString())) {
+            priceSize = LARGE.priceSize;
         }
         return priceSize;
     }

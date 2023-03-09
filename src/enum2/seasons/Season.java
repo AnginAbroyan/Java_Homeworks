@@ -26,27 +26,25 @@ public enum Season {
     public void checkSeason(){
         System.out.println("Please enter a valid temperature in Celsius to check the corresponding season: ");
         int input = sc.nextInt();
-        for(Season season: Season.values()) {
+
             if (input >= SPRING.low && input <= SPRING.high){
                 System.out.println(input + " Celsius temperature is typical to " + SPRING.toString());
-                break;
+
             }
             if (input >= SUMMER.low && input <= SUMMER.high){
                 System.out.println(input + " Celsius temperature is typical to " + SUMMER.toString());
-                break;
+
             }
             if (input >= FALL.low && input <= FALL.high){
                 System.out.println(input + " Celsius temperature is typical to " + FALL.toString());
-                break;
+
             }
             if (input >= WINTER.low && input <= WINTER.high){
                 System.out.println(input + " Celsius temperature is typical to " + WINTER.toString());
-                break;
+
             }
             else{
                 System.out.println("Please enter a valid temperature.");
-                break;
             }
-        }
     }
 }

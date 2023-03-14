@@ -192,7 +192,6 @@ public class Programs extends Exception {
         }
     }
 
-
     /**
      * EX8
      * The method checks whether the given mail address is legal or not. If not it throws an exception.
